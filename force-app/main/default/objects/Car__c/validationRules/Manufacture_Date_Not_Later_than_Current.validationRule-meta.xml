@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manufacture_Date_Not_Later_than_Current</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(Fabrication_Date__c &lt;= TODAY())</errorConditionFormula>
+    <errorDisplayField>Fabrication_Date__c</errorDisplayField>
+    <errorMessage>The manufacturing date cannot be later than the current date</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_hot_needs_phone_number</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Rating,&apos;Hot&apos;), ISBLANK(Phone))</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>For accounts classified as &quot;Hot&quot;, the telephone field must be filled in.</errorMessage>
+</ValidationRule>
