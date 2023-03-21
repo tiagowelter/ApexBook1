@@ -18,10 +18,7 @@ public with sharing class CarPartsIntegration {
           Map<String, Object> partData = (Map<String, Object>) obj;
           Part__c part = new Part__c();
           part.Name = (String) partData.get('partName');
-          part.Part_Type__c = (String)partData.get('partType');
-          part.Brand__c = (String)partData.get('partBrand');
-          part.Model__c = (String)partData.get('partModel');
-          part.Price__c = (Decimal) partData.get('partPrice');
+          part.PartCost__c = (Decimal) partData.get('partPrice');
           partsToUpsert.add(part);
         }
   
